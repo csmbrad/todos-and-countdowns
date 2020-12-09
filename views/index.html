@@ -1,0 +1,116 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A cool thing made with Glitch" />
+
+    <title>To Do List!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="script.js" type="text/babel"></script>
+  </head>
+  <body>
+    <style scoped="">
+      .button-success,
+      .delete-button,
+      .edit-button,
+      .button-secondary {
+        color: white;
+        border-radius: 4px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+      }
+
+      .button-success {
+        background: rgb(28, 184, 65);
+        /* this is a green */
+      }
+
+      .delete-button {
+        float: right;
+        background: rgb(202, 60, 60);
+        margin-right: 3%;
+        /* this is a maroon */
+      }
+
+      .edit-button {
+        float: right;
+        background: rgb(223, 117, 20);
+        margin-right: 3%;
+        margin-left: 3%;
+        /* this is an orange */
+      }
+      .pure-u-3-5 {
+        background: lightgray;
+        border-radius: 5px;
+      }
+      .base-margin {
+        margin-left: 3%;
+      }
+      
+    </style>
+
+    <main>
+      <div class="pure-g">
+        <div class="pure-u-1-5"></div>
+        <div class="pure-u-3-5">
+          <div class="base-margin2" id="aaa">
+            <div id="list-for-react">
+              React app loading, please wait.
+            </div>
+            <!-- <header>
+              <h1>Generic TODO List</h1>
+            </header>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+            <a href="/logout">Logout</a>
+
+            <form id="dreamForm" class="pure-form">
+              <label>
+                Add Item to To Do List
+                <input
+                  name="dream"
+                  type="text"
+                  maxlength="100"
+                  required
+                  placeholder="Task"
+                />
+              </label>
+              <button
+                type="submit"
+                id="submit-dream"
+                class="pure-button pure-button-primary button-success"
+              >
+                Add Task
+              </button>
+            </form>
+            <section class="dreams">
+              <ul id="dreams">
+                <em>loading dreams&hellip;</em>
+              </ul>
+            </section> -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- import the webpage's client-side javascript file -->
+  </body>
+</html>

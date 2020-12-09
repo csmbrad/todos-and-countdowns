@@ -1,0 +1,153 @@
+/* this file is loaded by index.html and styles the page */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3D3D3D;
+  font-family: sans-serif;
+  margin: 2em 1em;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-style: italic;
+  color: #2434AB;
+  max-width: calc(100% - 5rem);
+  line-height: 1.1;
+}
+
+form {
+  background-color: #eee;
+  display: grid;
+  grid-gap: 1em;
+  padding: 1em;
+  max-width: 97%;
+  border-radius: 5px;
+  margin-top: 1%;
+}
+
+input {
+  border: 1px solid silver;
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 100%;
+}
+
+form button {
+  background-color: #bbbbf2;
+  border: 2px solid currentColor;
+  border-radius: 0.25em;
+  cursor: pointer;
+  font-size: inherit;
+  line-height: 1.4em;
+  padding: 0.25em 1em;
+  max-width: 20ch;
+}
+
+li {
+  margin-top: 1%;
+}
+ul {
+  list-style-type:none;
+  margin-left: -3%;
+}
+
+.topBar {
+  float: top;
+  background: lightgrey;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.logout-button {
+  background: rgb(202, 60, 60);
+  /* this is a maroon */
+  width: 115px;
+  float: right;
+  margin-right: 14%;
+  text-color: white;
+}
+.section-title-bar {
+  float: top;
+  background: #2434AB;
+  text-color: #eee;
+  margin-bottom: 5px;
+}
+
+.grid-container {
+  margin-right: 3%;
+  display: grid;
+  grid-template-columns: 5fr 5fr 4fr;
+  gap: 0px 0px;
+  border-radius: 5px;
+  height: auto;
+  background-color: #eee;
+  grid-template-areas: "title-area time-area button-area";
+}
+
+.button-area {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  grid-area: button-area;
+}
+
+.title-area {
+  display: flex;
+  align-items: center;
+  grid-area: title-area;
+}
+
+.time-area {
+  display: flex;
+  align-items: center;
+  grid-area: time-area;
+}
+
+.logout-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.complete-button {
+  width:150px;
+}
+
+.time-container {
+  background: #eee;
+  border-radius: 5px;
+  margin-right: 3%;
+}
+
+.time-text {
+  padding: 1%;
+  padding-left: 2%;
+}
+
+.times-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "remaining-area reset-area"
+    "progress-area progress-area";
+}
+.progress-area { grid-area: progress-area; }
+.remaining-area { grid-area: remaining-area; }
+.reset-area { grid-area: reset-area; }
+
+.not-base-margin {
+  width:100%
+}
+
+progress {
+  width:100%
+}
+
+.button-gives-space {
+  margin-top:2%;
+  margin-bottom:2%
+}

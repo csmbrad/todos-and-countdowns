@@ -1,0 +1,180 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Login Page for A cool thing made with Glitch"
+    />
+
+    <title>Login For To Do List!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's client-side javascript file -->
+
+    <script src="/login.js" defer></script>
+  </head>
+  <body>
+    <style scoped="">
+      .pure-u-3-5 {
+        background: lightgray;
+        border-radius: 5px;
+      }
+      .base-margin {
+        margin-left: 3%;
+        max-width: 94%;
+      }
+      .edit-button {
+        float: right;
+        background: rgb(223, 117, 20);
+        margin-right: 30;
+        margin-left: 3%;
+        /* this is an orange */
+      }
+      .edit-button {
+        color: white;
+        border-radius: 4px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+    <div class="pure-g">
+      <div class="pure-u-1-5"></div>
+      <div class="pure-u-3-5">
+        <div class="topBar">
+          <div class="pure-g">
+            <div class="pure-u-18-24">
+              <h1 class="base-margin">Help Page </h1>
+            </div>
+            <div class="pure-u-6-24 logout-button-container" style="display:flex; justify-content:flex-end;">
+              <a href="/index" class="pure-button edit-button logout-button">
+                Back Home
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="pure-g section-title-bar">
+          <div class="pure-u base-margin">
+            <h2 class="title-text" style="color: #eee">
+              The To Do List:
+            </h2>
+          </div>
+        </div>
+        <div class="base-margin">
+          <p>
+            The To-Do List allows you to add items with a short name (less than
+            100 characters) and a length of time to complete them (shorter than
+            12 hours). The list displays how long all your tasks will take based
+            on your estimates and also displays the time you will be done based
+            on your estimates. This is shown in your local time. These times
+            ignore completed entries. All your entries will remain intact
+            between logins and devices as long as you use the same account.
+          </p>
+          <h3>Adding items to the To-Do List:</h3>
+          <p>
+            Adding items to the list is as simple as filling out the form and
+            pressing submit. The title field takes text and is limited to 100
+            characters. The duration field takes a number, in hours, between 0.5
+            and 12. It only accepts numbers in increments of half an hour, like
+            1.5, 2.5, and so forth. Once you have entered your information press
+            the big green submit button.
+          </p>
+          <h3>
+            Editing items from the To-Do List:
+          </h3>
+          <p>
+            You can edit an item by the to-do list by clicking on the Edit
+            button in its entry. This will highlight it in blue, and change the
+            main form to an edit form with the same blue background. It will
+            automatically populate the form with the values from the entry. You
+            can edit these values, then press the big green submit button to
+            edit the entry, or you can switch to another entry to edit by
+            pressing its edit button. You cannot edit, complete, or delete an
+            entry while editing it.
+          </p>
+          <h3>
+            Deleting items from the To-Do List:
+          </h3>
+          <p>
+            You can delete an item by pressing the Delete button on its entry
+            and confirming by pressing "Ok" in the popup.
+            <b>
+              BE WARNED, this process will delete your entry FOREVER and cannot
+              be reversed.
+            </b>
+          </p>
+          <h3>
+            Completing an item on the To-Do List:
+          </h3>
+          <p>
+            You can mark an item as complete by pressing the green Complete!
+            button in its entry. The item will be colored light green and the
+            button will change to an Uncomplete button. Completed entries will
+            stay completed even after refreshing the page, and will not be
+            counted towards the time to finish.
+          </p>
+        </div>
+        <div class="pure-g section-title-bar">
+          <div class="pure-u base-margin">
+            <h2 class="title-text" style="color: #eee">
+              The Countdowns:
+            </h2>
+          </div>
+        </div>
+        <div class="base-margin">
+          <p>
+            The countdown section allows you to set daily "countdowns" or
+            "alarms" that will display how much time is left until a specific
+            time of day. They reset automatically once their target time is
+            reached. The time remaining until the target time is displayed
+            visually below its numeric representation. These countdowns are
+            useful because they can help you easily see how much time you have
+            before a deadline, class, video game daily reset, or any other event
+            that occurs at a specific time.
+          </p>
+          <h3>
+            Adding a Countdown:
+          </h3>
+          <p>
+            Adding a countdown is very similar to adding a to-do item. The
+            countdown form needs to be filled out with a name (between 1 and 100
+            characters), the target hour from 0 to 23, and the minute within
+            that target hour from 0 to 59. These numbers must be whole numbers,
+            like 1, 15, 23, etc. Once you have provided this information, click
+            the big green submit button and the countdown will be added.
+          </p>
+          <h3>
+            Editing a Countdown:
+          </h3>
+          <p>
+            You can edit an item by the to-do list by clicking on the Edit
+            button in its entry. This will highlight it in blue, and change the
+            main form to an edit form with the same blue background. It will
+            automatically populate the form with the values from the entry. You
+            can edit these values, then press the big green submit button to
+            edit the entry, or you can switch to another entry to edit by
+            pressing its edit button. You cannot edit, complete, or delete an
+            entry while editing it.
+          </p>
+          <h3>
+            Deleting a Countdown:
+          </h3>
+          <p>
+            You can delete an item by pressing the Delete button on its entry
+            and confirming by pressing "Ok" in the popup.
+            <b>
+              BE WARNED, this process will delete your entry FOREVER and cannot
+              be reversed.
+            </b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
